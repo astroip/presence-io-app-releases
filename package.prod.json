@@ -1,0 +1,47 @@
+{
+    "name": "presence-io-app",
+    "version": "0.0.0",
+    "description": "Presence IO - Desktop Application",
+    "bin": {
+        "presence-io": "jdeploy-bundle/jdeploy.js"
+    },
+    "dependencies": {
+        "node-fetch": "^2.7.0",
+        "yauzl": "^2.10.0",
+        "mkdirp": "^1.0.4",
+        "rimraf": "^3.0.2",
+        "which": "^2.0.2",
+        "tar": "^6.2.0",
+        "shelljs": "^0.8.5"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/astroip/presence-io-app-releases"
+    },
+    "homepage": "https://presence-io.com",
+    "author": "presence-io",
+    "license": "UNLICENSED",
+    "jdeploy": {
+        "fallbackToUniversal": false,
+        "publishTargets": [
+            {
+                "name": "npm: npm",
+                "type": "NPM",
+                "url": ""
+            }
+        ],
+        "title": "Presence IO",
+        "jar": "presence-desktop-app/target/presence-io-jdeploy.jar",
+        "javaVersion": "17",
+        "javafx": true,
+        "platformBundlesEnabled": false,
+        "downloadPage": {
+            "platforms": [
+                "default"
+            ]
+        }
+    }
+}
