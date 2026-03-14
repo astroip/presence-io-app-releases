@@ -1,2 +1,3 @@
-# presence-io-app-releases
-Public stable releases for Presence IO desktop app
+# Presence IO Stable Releases
+
+Public stable releases for Presence IO desktop app.
